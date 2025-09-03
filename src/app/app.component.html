@@ -30,7 +30,7 @@
 
 
 
-<table style="width: 100%; border-collapse: collapse; text-align: left;">
+<!-- <table style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">ID</th>
@@ -47,4 +47,13 @@
       <td style="border: 1px solid #ddd; padding: 8px;">{{ item.completed }}</td>
     </tr>
   </tbody>
-</table>
+</table> -->
+
+<input type="text" [(ngModel)]="tvValue"/>
+<br>
+
+<button (click)="evtCreateNewTV()">insert:post</button> |
+<button (click)="getTVSById(tvValue)">GetTVByID</button> |
+<button (click)="updateTV(tvValue)">update:put</button>
+<button (click)="patchTV(tvValue)">updateMINiRec:patch</button>
+<button (click)="deleteTV(tvValue)">Delete</button>

@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "another title",
+      "views": 100
+    },
+    {
+      "id": "4",
+      "title": "another title",
+      "views": 500
+    }
+  ],
+  "Mobiles": [
+    {
+      "id": "1",
+      "brand": "Samsung",
+      "price": 100000
+    },
+    {
+      "id": "2",
+      "brand": "Iphone",
+      "price": 200000
+    }
+  ],
+  "TVs": [
+    {
+      "brand": "1+",
+      "location": "KADAPA",
+      "price": 56000,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "brand": "Sony",
+      "location": "Chennai",
+      "price": 30000
+    },
+    {
+      "id": "4",
+      "brand": "Galaxy",
+      "location": "Mysore",
+      "price": 40000
+    },
+    {
+      "id": "4",
+      "brand": "Galaxy",
+      "location": "Mysore"
+    }
+  ]
+}
