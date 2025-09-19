@@ -26,17 +26,37 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    let endPoint = this.httpClient.get(this.jsonAPI);
-    endPoint.subscribe((data: any) => {
-      console.log("Angular_HTTP is: ", data);
-      this.data = data;
-    })
+    // let endPoint = this.httpClient.get(this.jsonAPI);
+    // endPoint.subscribe((data: any) => {
+    //   console.log("Angular_HTTP is: ", data);
+    //   this.data = data;
+    // })
 
 
-    let myOtherEndPoint = this.httpClient.get(this.myEndPoint)
-    myOtherEndPoint.subscribe((result) => {
+    // let myOtherEndPoint = this.httpClient.get(this.myEndPoint)
+    // myOtherEndPoint.subscribe((result) => {
+    //   console.log("HTTP Server is: ", result);
+    // });
+
+    
+    //ASP Code
+    let url = "https://localhost:7233/api/Students/GetStuName";
+    this.httpClient
+    .get(url)
+    .subscribe((result) => {
       console.log("HTTP Server is: ", result);
-    })
+    });
+
+
+
+
+
+
+
+
+
+
+
   }
 
 
