@@ -40,13 +40,28 @@ export class AppComponent implements OnInit {
 
     
     //ASP Code
-    let url = "https://localhost:7233/api/Students/GetStuName";
+    // let url = "https://localhost:7233/api/Students/GetStuName";
+    // this.httpClient
+    // .get(url)
+    // .subscribe((result) => {
+    //   console.log("HTTP Server is: ", result);
+    // });
+
+
+
+    var url = "https://localhost:7233/api/EmployeeV3/GetEmployeesList_filter";
     this.httpClient
-    .get(url)
+    .post(url,{
+      "empname":"John",
+      "location":"New York",
+      "salary":18000
+    })
     .subscribe((result) => {
       console.log("HTTP Server is: ", result);
     });
 
+     
+    
 
 
 
